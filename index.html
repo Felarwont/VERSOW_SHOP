@@ -1,153 +1,58 @@
-<!DOCTYPE html><html lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VERSOW SHOP</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }body {
-  font-family: 'Inter', sans-serif;
-  background-color: #f5f5f5;
-  color: #1a1a1a;
-  line-height: 1.6;
-}
-
-header {
-  background: linear-gradient(90deg, #000 0%, #333 100%);
-  color: #fff;
-  padding: 30px 20px;
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: 800;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.catalog {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  padding: 50px 30px;
-}
-
-.product {
-  background: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.product:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.product img {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-}
-
-.product h3 {
-  font-size: 1.4rem;
-  padding: 15px 20px 5px;
-  font-weight: 600;
-}
-
-.product p {
-  padding: 0 20px;
-  font-size: 0.95rem;
-  color: #555;
-}
-
-.product .price {
-  padding: 10px 20px 5px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #000;
-}
-
-.product .buy {
-  padding: 10px 20px 20px;
-}
-
-.buy a {
-  background: #0088cc;
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background 0.3s;
-}
-
-.buy a:hover {
-  background: #0075b5;
-}
-
-.telegram {
-  text-align: center;
-  margin: 50px 0;
-}
-
-.telegram a {
-  background: #0088cc;
-  color: #fff;
-  padding: 15px 30px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 600;
-  transition: background 0.3s, transform 0.2s;
-}
-
-.telegram a:hover {
-  background: #0075b5;
-  transform: scale(1.05);
-}
-
-footer {
-  text-align: center;
-  padding: 25px;
-  background-color: #111;
-  color: #aaa;
-  font-size: 0.95rem;
-}
-
-  </style>
+  <title>Versow Shop — Бренд одежды</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    VERSOW SHOP
-  </header>  <section class="catalog">
-    <div class="product">
-      <img src="https://via.placeholder.com/400x400.png?text=Футболка" alt="Футболка" />
-      <h3>Футболка VERSOW</h3>
-      <p>Качественный материал, стильный дизайн</p>
-      <div class="price">₽1,990</div>
-      <div class="buy">
-        <a href="https://t.me/@Versowrtp">Купить через Telegram</a>
-      </div>
-    </div><div class="product">
-  <img src="https://cdn.openai.com/chatgpt/versow-shop/mountain-shirt.jpg" alt="Mountain футболка" />
-  <h3>Футболка "Mountain Calling"</h3>
-  <p>Темно-зелёная футболка с ярким принтом. Отлично подойдёт для активных и стильных.</p>
-  <div class="price">₽1,000</div>
-  <div class="buy">
-    <a href="https://t.me/@Versowrtp">Купить через Telegram</a>
-  </div>
-</div>
+    <div class="logo">Versow Shop</div>
+    <button id="burger" class="burger">&#9776;</button>
+    <nav id="nav">
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">О бренде</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  </section>  <div class="telegram">
-    <a href="https://t.me/@Versowrtp" target="_blank">Написать в Telegram</a>
-  </div>  <footer>
-    &copy; 2025 VERSOW SHOP. Все права защищены.
+  <main>
+    <section class="hero">
+      <h1>Новая коллекция Versow</h1>
+      <p>Уникальные худи, футболки, кепки и аксессуары</p>
+      <a href="#" class="btn">Смотреть каталог</a>
+    </section>
+
+    <section class="products">
+      <h2>Каталог</h2>
+      <div class="grid">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/300x300" alt="Кофта">
+          <h3>Чёрная кофта Versow</h3>
+          <p>4500₽</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/300x300" alt="Футболка">
+          <h3>Белая футболка</h3>
+          <p>3000₽</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/300x300" alt="Сумка">
+          <h3>Сумка с логотипом</h3>
+          <p>2500₽</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Versow Shop — Все права защищены</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
